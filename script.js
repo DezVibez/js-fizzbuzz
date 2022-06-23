@@ -10,30 +10,45 @@ Abbiamo visto qualcosa di particolare che possiamo usare? */
 
 
 
+/*Prendiamo ciò che ci serve
+praticamente solo dove andremo a stampare il risultato*/ 
+
 const stampa = document.getElementById("target")
 
+
+
+/*Dichiaro questa stringa vuota fuori di modo che possa essere riempita successivamente*/ 
 
 let content = "";
 
 for (let  i = 1 ; i <= 100; i++) {
     
-    content += i ;
+    
 
     if ( i % 3 == 0 && i % 5 !==0 )
-        {  i === "fizz"}
+        { console.log( "fizz" )
+        stampa.innerText = content }
+        
 
-    else if( i % 3 !== 0 && i % 5 ==0 )
-        {  i === "buzz"}
+        else if( i % 3 !== 0 && i % 5 ==0 )
+        {console.log( "buzz" )
+        stampa.innerText = content}
+        
 
-    else( i % 3 == 0 && i % 5 ==0 )
-        {  i === "fizzbuzz" }
+        else if( i % 3 == 0 && i % 5 ==0 )
+        {console.log( "fizzbuzz" )
+        stampa.innerText = content}
+
+        else {
+            console.log(i)
+            stampa.innerText = content
+        }
+
+        content += i ;
+
 }
 
 
-
-       
-
-stampa.innerText = content
 
 
 
