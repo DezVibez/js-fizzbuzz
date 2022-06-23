@@ -27,21 +27,26 @@ for (let  i = 1 ; i <= 100; i++) {
 
     if ( i % 3 == 0 && i % 5 !==0 )
         { console.log( "fizz" )
-        stampa.innerText = content }
+        document.writeln( "fizz" )
+        
+        }
         
 
         else if( i % 3 !== 0 && i % 5 ==0 )
         {console.log( "buzz" )
-        stampa.innerText = content}
+        document.writeln( "buzz" )
+        }
         
 
         else if( i % 3 == 0 && i % 5 ==0 )
         {console.log( "fizzbuzz" )
-        stampa.innerText = content}
+        document.writeln( "fizzbuzz" )
+        }
 
         else {
-            console.log(i)
-            stampa.innerText = content
+        console.log(i)
+        document.writeln( i )
+        
         }
 
         content += i ;
